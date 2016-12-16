@@ -1,0 +1,136 @@
+.aboutPageWrapper {
+    max-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.aboutPageSectionWrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.aboutPageSectionWrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.about:first-of-type {
+    vertical-align: top;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutMeIntroductionText {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 18px;
+    line-height: 28px;
+    vertical-align: top;
+    animation: ease-in-font 1.5s ease-in;
+}
+
+@keyframes ease-in-font {
+    0% {
+        color: white;
+    }
+    /* Finalization to 100% is done by using component css "final-state"-definitions. */
+}
+
+@media(max-width: 850px) {
+    .aboutMeIntroductionText {
+        width: 100%;
+    }
+}
+
+.aboutMeMainImage {
+    background-image: url("./images/about-me-main-image.png");
+    width: 49.15254%;
+    float: left;
+    background-color: #8EB8A0;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.containerAnimated {
+    animation: image-appear-smooth 2s;
+}
+
+@keyframes image-appear-smooth {
+    0% {
+        transform: translateY(40%);
+        width: 0;
+        background-color: white;
+        height: 1000px;
+    }
+    30% {
+        transform: translateY(-7%) translateX(10%) rotate(30deg);
+        width: 5%;
+    }
+    60% {
+        transform: translateY(5%) translateX(5%);
+        width: 10%;
+    }
+    80% {
+        transform: translateY(-15%);
+        background-color: white;
+        height: 350px;
+    }
+    /* Finalization to 100% is done by using component css "final-state"-definitions. */
+}
+
+@media(max-width: 850px) {
+    .aboutMeMainImage {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 200px;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.skillItemIcon {
+    display: inline-block;
+    height: 50px;
+    margin: 0 auto 15px;
+    width: 50px;
+}
+
+.skillItemIcon img {
+    width: 50px;
+}
+
+.skillName {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skillText {
+    font-size: 14px;
+    padding: 0 10px;
+}

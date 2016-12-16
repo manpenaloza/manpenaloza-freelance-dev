@@ -1,0 +1,25 @@
+.containerNavMobile {
+    background: #44535a;
+    display: block;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@media(min-width: 480px) {
+    .containerNavMobile {
+        display: none;
+    }
+}
+
+.mobileNavButton {
+    color: #fff;
+    font-size: 24px;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}

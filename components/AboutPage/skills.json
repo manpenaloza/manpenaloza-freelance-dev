@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Development",
+    "text": "I build fun-to-use web and mobile applications considering appropriate packages and technologies of the javascript/react ecosystem.",
+    "icon": "codeIcon.png"
+  },
+  {
+    "name": "Business-driven Operating",
+    "text": "My experience in the area of technical product development and project management helps to set up effective development strategies and processes.",
+    "icon": "businessGoalDrivenIcon.png"
+  },
+  {
+    "name": "Problem Solver",
+    "text": "Solving problems with code and process automation is what fascinates me most about software development. Credo: there's always a solution!",
+    "icon": "problemSolverIcon.png"
+  },
+  {
+    "name": "Project Management",
+    "text": "Successful development processes require proper team processes, management and communication. In case you need additional CTO-like support, I'm there.",
+    "icon": "projectMgmtIcon.png"
+  }
+]

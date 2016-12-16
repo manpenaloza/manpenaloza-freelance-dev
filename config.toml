@@ -1,0 +1,15 @@
+siteTitle = "@manpenaloza"
+siteDescr = "Personal Website of @manpenaloza - Freelance Web-/App Development with a marked preference for React and React-Native"
+siteAuthor = "@manpenaloza"
+
+twitterId = "manpenaloza"
+googleAnalyticsId = ""
+linkPrefix = "/manpenaloza-freelance-dev"
+
+menuPoints = [
+    "Home",
+    "about",
+    "Timeline",
+    "showroom",
+    "Contact"
+]

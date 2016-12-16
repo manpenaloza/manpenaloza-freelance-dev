@@ -1,0 +1,83 @@
+$white: #fff;
+
+html {
+    box-sizing: border-box;
+}
+
+// Set up decent box-sizing stystem set every component inheriting parent.
+// So default everything is border-box.
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: $white;
+    font-family: Roboto Condensed,sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:focus {
+    color: white !important;
+}
+
+// set to height 100% for safety reasons as quite all child elements are positoned
+// absolute or floated and thus taken out of the document flow
+.pagesRootContainer {
+    height: 100%
+}
+
+
+.mainContainer {
+    left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-transition: left .3s;
+    transition: left .3s;
+    width: 100%;
+}
+
+@media(min-width: 480px) {
+    .mainContainer {
+        left: 120px !important;
+        width: calc(100% - 120px);
+    }
+}
+
+.contentContainer {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 479px) {
+    .contentContainer {
+        margin-top: 60px;
+    }
+}
+
+.articles {
+    padding-top: 40px;
+}
+
+.article-wrap {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.pageContentWrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
