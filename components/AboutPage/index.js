@@ -3,6 +3,7 @@ import { RouteHandler, Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import access from 'safe-access'
+import Button from '../Button';
 import { config } from 'config'
 import PageHeadline from '../PageHeadline';
 import styles from './style.module.css';
@@ -38,6 +39,17 @@ class AboutPage extends React.Component {
         <div className={`${styles.aboutPageSectionWrapper} ${styles.skillsSection}`}>
           {this.renderSkills()}
           <div></div>
+        </div>
+        <div className={styles.aboutPageSectionWrapper}>
+          <p className={styles.quoteText}>
+            <span className={`${styles.quoteSymbol} ${styles.leftQuoteSymbol}`}>“</span>
+              Sorry, at first I have to disappoint you. Very anti-pattern-like <a href="https://medium.com/@manpenaloza/self-taught-code-learning-when-you-did-not-hack-the-commodore-64-in-your-childhood-aebfc6c8b389#.u0k8gzstc" target="_blank">I'm not that kind of programmer who hacked the Commodore 64 at a childhood age of 14.</a>
+              My childhood more was full of dirt of playing soccer, broken bones of skateboarding and acute hearing loss due to play the drums all day long. But NOW I'm here, with a backpack full of motivation, experience and programming knowledge thanks to the last years learning it on my own besides managing product-development processes for digital businesses.
+            <span className={`${styles.quoteSymbol} ${styles.rightQuoteSymbol}`}>”</span>
+          </p>
+        </div>
+        <div style={{ textAlign: 'center' }} className={styles.aboutPageSectionWrapper}>
+          <Button to="timeline" text="Continue to my timeline"/>
         </div>
       </div>
     );

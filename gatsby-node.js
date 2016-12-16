@@ -7,12 +7,14 @@
 var rucksack = require('rucksack-css')
 var lost = require("lost")
 var cssnext = require("postcss-cssnext")
+var nestedCss = require("postcss-nested");
 
 exports.modifyWebpackConfig = function(config, env) {
     config.merge({
         postcss: [
             lost(),
             rucksack(),
+            nestedCss(),
             cssnext({
                 browsers: ['>1%', 'last 2 versions']
             })
