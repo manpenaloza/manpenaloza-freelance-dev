@@ -43,8 +43,7 @@ class AboutPage extends React.Component {
         <div className={styles.aboutPageSectionWrapper}>
           <p className={styles.quoteText}>
             <span className={`${styles.quoteSymbol} ${styles.leftQuoteSymbol}`}>“</span>
-              Sorry, at first I have to disappoint you. Very anti-pattern-like <a href="https://medium.com/@manpenaloza/self-taught-code-learning-when-you-did-not-hack-the-commodore-64-in-your-childhood-aebfc6c8b389#.u0k8gzstc" target="_blank">I'm not that kind of programmer who hacked the Commodore 64 at a childhood age of 14.</a>
-              My childhood more was full of dirt of playing soccer, broken bones of skateboarding and acute hearing loss due to play the drums all day long. But NOW I'm here, with a backpack full of motivation, experience and programming knowledge thanks to the last years learning it on my own besides managing product-development processes for digital businesses.
+              But Sorry, having come this far I have to disappoint you a little bit. Very anti-pattern-like <a href="https://medium.com/@manpenaloza/self-taught-code-learning-when-you-did-not-hack-the-commodore-64-in-your-childhood-aebfc6c8b389#.u0k8gzstc" target="_blank">I'm not that kind of programmer who hacked the Commodore 64 at a childhood age of about 14.</a> My childhood more was full of dirt of playing soccer, broken bones of skateboarding and acute hearing loss due to play the drums all day long. So NOW AND NOWADAYS I'm here, with a backpack full of motivation, experience and programming knowledge thanks to the last years learning it on my own besides managing product-development processes for digital businesses.
             <span className={`${styles.quoteSymbol} ${styles.rightQuoteSymbol}`}>”</span>
           </p>
         </div>
