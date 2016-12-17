@@ -63,9 +63,7 @@ class AboutPage extends React.Component {
             <span className={`${styles.quoteSymbol} fa fa-quote-right about-quote`}></span>
           </div>
         </div>
-        <div style={styles.aboutPageSectionWrapper}>
-          {/*{this.renderFacts()}*/}
-        </div>
+        
         <div style={{ textAlign: 'center' }} className={styles.aboutPageSectionWrapper}>
           <Button to="timeline" text="Continue to my timeline"/>
         </div>
