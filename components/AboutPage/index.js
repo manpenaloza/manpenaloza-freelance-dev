@@ -10,6 +10,13 @@ import styles from './style.module.css';
 
 class AboutPage extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      avocadosEaten: 7593
+    }
+  }
+
   renderSkills() {
     const skills = require("./skills.json");
     return skills.map((skill) => {
@@ -28,14 +35,28 @@ class AboutPage extends React.Component {
   renderFacts() {
     const facts = require('./facts.json');
     return facts.map(fact => {
+      let num = fact.name.indexOf('Avocado') != -1
+        ? <span className={`${styles.factNumber} ${styles.factNumberAvocado}`}>{this.state.avocadosEaten}</span>
+        : <span className={styles.factNumber}>{fact.number}</span>
+      let icon = fact.name.indexOf('Avocado') != -1
+        ? <span className={`fa fa-${fact.fa} ${styles.factIcon} ${styles.factNumberAvocado}`}></span>
+        : <span className={`fa fa-${fact.fa} ${styles.factIcon}`}></span>
       return (
         <div className={styles.factItem}>
-          <span className={`fa fa-${fact.fa} ${styles.factIcon}`}></span>
-          <span className={styles.factNumber}>{fact.number}</span>
+          {icon}
+          {num}
           <span className={styles.factName}>{fact.name}</span>
         </div>
       )
     })
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        avocadosEaten: this.state.avocadosEaten + 1
+      })
+    }, 2000)
   }
 
   render() {

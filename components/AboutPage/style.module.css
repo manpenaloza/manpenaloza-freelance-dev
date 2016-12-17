@@ -164,11 +164,38 @@
             font-weight: 300;
             font-size: 30px;
             margin: 10px 0;
+            transition: color
+        }
+        .factNumberAvocado {
+            animation: number-increase 1.5s ease-in;
+            animation-iteration-count: infinite;
+            animation-delay: 1.7s;
         }
         .factName {
             display: block;
             font-weight: 300;
             font-size: 16px;
         }
+    }
+}
+
+@keyframes number-increase {
+    0% {
+        transform: rotate(2deg) translateY(-3px) scale(1.1);
+        font-weight: 500;
+        color: #3D7F59;
+    }
+    5% {
+        transform: rotate(-1deg);
+        font-weight: 300;
+    }
+    10% {
+        transform: rotate(0deg);
+    }
+    35% {
+        color: #020202;
+    }
+    100% {
+
     }
 }
