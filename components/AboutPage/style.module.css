@@ -143,3 +143,32 @@
     font-style: italic;
     margin-top: 20px;
 }
+
+.factsSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .factItem {
+        display: flex;
+        flex-direction: column;
+        min-width: 170px;
+        margin-bottom: 20px;
+        max-width: 200px;
+        text-align: center;
+        .factIcon {
+            font-size: 3rem;
+            margin: 0 auto 15px;
+        }
+        .factNumber {
+            display: block;
+            font-weight: 300;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+        .factName {
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+}

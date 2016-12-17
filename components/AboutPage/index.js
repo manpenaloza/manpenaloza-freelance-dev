@@ -7,8 +7,6 @@ import Button from '../Button';
 import { config } from 'config'
 import PageHeadline from '../PageHeadline';
 import styles from './style.module.css';
-import "./skills.json"
-import "./facts.json"
 
 class AboutPage extends React.Component {
 
@@ -27,16 +25,18 @@ class AboutPage extends React.Component {
     })
   }
 
-  // renderFacts() {
-  //   const facts = require('./facts.json');
-  //   return facts.map(fact => {
-  //     return (
-  //       <div>
-  //         {fact.name}
-  //       </div>
-  //     )
-  //   })
-  // }
+  renderFacts() {
+    const facts = require('./facts.json');
+    return facts.map(fact => {
+      return (
+        <div className={styles.factItem}>
+          <span className={`fa fa-${fact.fa} ${styles.factIcon}`}></span>
+          <span className={styles.factNumber}>{fact.number}</span>
+          <span className={styles.factName}>{fact.name}</span>
+        </div>
+      )
+    })
+  }
 
   render() {
     const {route} = this.props
@@ -62,6 +62,9 @@ class AboutPage extends React.Component {
           <div style={{ textAlign: 'center' }}>
             <span className={`${styles.quoteSymbol} fa fa-quote-right about-quote`}></span>
           </div>
+        </div>
+        <div className={`${styles.aboutPageSectionWrapper} ${styles.factsSection}`}>
+          {this.renderFacts()}
         </div>
         
         <div style={{ textAlign: 'center' }} className={styles.aboutPageSectionWrapper}>

@@ -7,10 +7,10 @@
   {
     "name": "Avocados eaten",
     "number": 7593,
-    "fa": "cuterly"
+    "fa": "circle-thin"
   },
   {
-    "name": "Dev Tutorials watched",
+    "name": "Dev tutorials watched",
     "number": 3046,
     "fa": "television"
   },
@@ -22,6 +22,6 @@
   {
     "name": "Photos taken",
     "number": 59305,
-    "fa": "camera"
+    "fa": "camera-retro"
   }
 ]
