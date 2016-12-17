@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Hours on Stackoverflow",
+    "number": 5303,
+    "fa": "stack-overflow"
+  },
+  {
+    "name": "Avocados eaten",
+    "number": 7593,
+    "fa": "cuterly"
+  },
+  {
+    "name": "Dev Tutorials watched",
+    "number": 3046,
+    "fa": "television"
+  },
+  {
+    "name": "Countries visited",
+    "number": 24,
+    "fa": "globe"
+  },
+  {
+    "name": "Photos taken",
+    "number": 59305,
+    "fa": "camera"
+  }
+]
