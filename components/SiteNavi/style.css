@@ -10,7 +10,7 @@
     min-height: 320px;
     animation: bounce-in-sidebarNav 2.5s;
     &::-webkit-scrollbar {
-         width: 0 !important
+         display: none !important
     }
 }
 
