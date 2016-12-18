@@ -114,9 +114,13 @@
 .quoteText {
     font-size: 20px;
     font-family: Shadows Into Light Two,cursive;
+    letter-spacing: 1px;
     text-align: center;
     a {
       color: #7F3D63;
+      &:focus, &:hover {
+        color: #3d7f59 !important;
+       }
     }
 }
 

@@ -12,8 +12,7 @@ module.exports = React.createClass({
     render() {
         const {body, route} = this.props
         const title = DocumentTitle.rewind()
-        const font1 = <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
-        const font2 = <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700" rel="stylesheet" />
+        const fonts_OleoScriptANDShadowsIntoLight = <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700|Shadows+Into+Light+Two" rel="stylesheet" />
         let css
         if (process.env.NODE_ENV === 'production') {
             css = <style dangerouslySetInnerHTML={ {    __html: require('!raw!./public/styles.css')} } />
@@ -28,8 +27,7 @@ module.exports = React.createClass({
                 <title>
                   { title }
                 </title>
-                { /*font1*/ }
-                { font2 }
+                { fonts_OleoScriptANDShadowsIntoLight }
                 { css }
               </head>
               <body>
