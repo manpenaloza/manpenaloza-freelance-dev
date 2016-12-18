@@ -8,11 +8,11 @@ import './style.css'
 class SiteNavi extends React.Component {
 
   navIconImagePaths = {
-    home: "font-awesome_4-7-0_sign-in_120_0_ffffff_none.png",
     timeline: "font-awesome_4-7-0_hourglass-half_120_0_ffffff_none.png",
     about: "font-awesome_4-7-0_user-o_120_0_ffffff_none.png",
     showroom: "font-awesome_4-7-0_file-code-o_120_0_ffffff_none.png",
     contact: "font-awesome_4-7-0_compress_120_0_ffffff_none.png",
+    lounge: "read-my-blog.png"
   };
 
   menuItemImage(menuPoint) {

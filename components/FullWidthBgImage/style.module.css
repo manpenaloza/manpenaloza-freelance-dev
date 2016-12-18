@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: auto;
+    min-height: 700px; /* needed to not be too short compared to <SiteNavi/> component */
     right: 0;
     bottom: 0;
     background-size: cover;

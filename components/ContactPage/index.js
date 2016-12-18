@@ -18,11 +18,11 @@ class ContactPage extends React.Component {
         <PageWrapper>
           <PageHeadline color="#fff">{post.headline}</PageHeadline>
           <SectionWrapper customStyle="text-center">
-            <p className={styles.contactInfo}>I am availble for freelance work</p>
-            <a className={styles.messageMe} href="mailto:manuel.penaloza@gmx.at">Message me</a>
+            <p className={styles.contactInfo}>I am available for freelance work.</p>
+            <a className={styles.messageMe} href="mailto:manuel.penaloza@gmx.at">Message me <span className="fa fa-envelope-o"></span></a>
             <p className={styles.contactInfo}>Or find me here.</p>
-            <a href="#" className={styles.socialIcon}><span className="fa fa-twitter"></span></a>
-            <a href="#" className={styles.socialIcon}><span className="fa fa-linkedin"></span></a>
+            <a href="https://www.twitter.com/manpenaloza" className={styles.socialIconLink}><span className={`fa fa-twitter ${styles.socialIcon}`}></span></a>
+            <a href="https://at.linkedin.com/in/penalozamanuel" className={styles.socialIconLink}><span className={`fa fa-linkedin ${styles.socialIcon}`}></span></a>
           </SectionWrapper>
         </PageWrapper>
       </FullWidthBgImage>

@@ -7,9 +7,9 @@ googleAnalyticsId = ""
 linkPrefix = "/manpenaloza-freelance-dev"
 
 menuPoints = [
-    "Home",
     "about",
-    "Timeline",
+    "timeline",
     "showroom",
-    "contact"
+    "lounge",
+    "contact",
 ]

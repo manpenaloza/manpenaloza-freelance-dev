@@ -6,7 +6,7 @@
 
 a.messageMe {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
@@ -14,12 +14,19 @@ a.messageMe {
     letter-spacing: 2px;
     background: rgba(67, 95, 90, .5);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:
+        background-color 0.4s ease-out,
+        color 0.6s ease-in,
+        box-shaddow 0.8s ease-in,
+        transform 0.35s ease-in,
+        border-bottom 0.3s ease-out;
 
     &:hover {
         color: #fff;
         background-color: #7F3D63;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        transform: scale(1.1);
+        transform: scale(1.05);
+        border-bottom: 4px solid #fff;
      }
 
      &:focus {
@@ -27,7 +34,7 @@ a.messageMe {
       }
 }
 
-.socialIcon {
+.socialIconLink {
     color: #fff;
     font-size: 2em;
     margin: 10px 20px;
@@ -36,3 +43,20 @@ a.messageMe {
         color: #7F3D63;
      }
 }
+
+.socialIcon:hover {
+    animation: rotateIcon .35s linear
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(180deg);
+    }
+    100 % {
+        transform: translateY(0)
+    }
+}
+
