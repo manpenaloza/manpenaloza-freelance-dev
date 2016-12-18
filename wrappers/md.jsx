@@ -4,6 +4,7 @@ import AboutPage from '../components/AboutPage'
 import ShowRoomPage from '../components/ShowRoomPage'
 import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
+import ContactPage from '../components/ContactPage'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
@@ -24,6 +25,8 @@ class MarkdownWrapper extends React.Component {
           template = <AboutPage {...this.props}/>
         } else if (layout == 'showroom') {
           template = <ShowRoomPage {...this.props}/>
+        } else if (layout == 'contact') {
+          template = <ContactPage {...this.props}/>
         } else if (layout != 'page') {
           template = <SitePost {...this.props}/>
         } else if (layout != 'post') {
