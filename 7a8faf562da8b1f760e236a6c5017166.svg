@@ -1,0 +1,17 @@
+<svg width="259px" height="189px" viewBox="0 0 259 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>glasses</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="showRoomGlassesSVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="glasses" sketch:type="MSLayerGroup" transform="translate(5.000000, 6.000000)">
+            <path d="M79.2539062,20.078125 C79.2539062,20.078125 70.4441533,4.82838836 67.8398438,0.3203125 L67.8398438,0.3203125 L51.0742188,7.8359375 L42.3046875,22.6992187 L0.57421875,112.113281" id="Path-1" stroke="#3D7F59" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval-1" stroke="#3D7F59" stroke-width="11" sketch:type="MSShapeGroup" cx="54.5" cy="128.5" r="48.5"></circle>
+            <path d="M32.716366,106.526212 C43.4021314,106.526212 54.0878967,117.354337 54.0878967,117.354337 L11.3448353,117.354337 C11.3448353,117.354337 22.0306007,106.526212 32.716366,106.526212 Z" id="Rectangle-1" fill="#44535A" sketch:type="MSShapeGroup" transform="translate(32.716366, 111.940275) rotate(-45.000000) translate(-32.716366, -111.940275) "></path>
+            <path d="M248.253906,20.078125 C248.253906,20.078125 239.444153,4.82838836 236.839844,0.3203125 L236.839844,0.3203125 L220.074219,7.8359375 L211.304688,22.6992187 L169.574219,112.113281" id="Path-1" stroke="#3D7F59" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" sketch:type="MSShapeGroup" transform="translate(208.914062, 56.216797) scale(-1, 1) translate(-208.914062, -56.216797) "></path>
+            <circle id="Oval-1" stroke="#3D7F59" stroke-width="11" sketch:type="MSShapeGroup" cx="194.5" cy="128.5" r="48.5"></circle>
+            <path d="M213.716366,106.526212 C224.402131,106.526212 235.087897,117.354337 235.087897,117.354337 L192.344835,117.354337 C192.344835,117.354337 203.030601,106.526212 213.716366,106.526212 Z" id="Rectangle-1" fill="#44535A" sketch:type="MSShapeGroup" transform="translate(213.716366, 111.940275) scale(-1, 1) rotate(-45.000000) translate(-213.716366, -111.940275) "></path>
+            <path d="M101,143 C101,143 109.311148,123 125.8593,123 C142.407452,123 148,143 148,143" id="Line" stroke="#3D7F59" stroke-width="12" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
