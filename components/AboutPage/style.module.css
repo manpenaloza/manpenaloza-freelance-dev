@@ -150,7 +150,7 @@
             transition: color
         }
         .factNumberAvocado {
-            animation: number-increase 1.5s ease-in;
+            animation: number-increase 2s ease-in;
             animation-iteration-count: infinite;
             animation-delay: 1.7s;
         }

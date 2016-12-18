@@ -1,0 +1,14 @@
+[
+  {
+    "name": "landwirt.com Hofladen App",
+    "image": "hofladen_reference.jpg",
+    "shortDescription": "App for iOS and Android to discover farmers with direct-sales of their products near you.",
+    "primaryStack": "React-Native, Redux"
+  },
+  {
+    "name": "bier-in-aktion.at Chatbox",
+    "image": "bier-chatbot_reference.jpg",
+    "shortDescription": "Facebook Messenger Chatbot to receive up-to-date beer offers including price and date.",
+    "primaryStack": "NodeJS, Axios"
+  }
+]
