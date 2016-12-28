@@ -1,0 +1,12 @@
+div.timeline {
+    position: relative;
+    &:before {
+         position: absolute;
+         content: '';
+         left: 29px;
+         top: 10px;
+         width: 3px;
+         height: 100%;
+         background-color: #ddd;
+     }
+}
