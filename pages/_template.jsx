@@ -21,38 +21,37 @@ import '../static/scss/test.scss' // this one includes my personal styles
 
 class Template extends React.Component {
 
-    render() {
-        const {location, children} = this.props
-        return (
-            <div className="pagesRootContainer">
-                <SiteNavi title={ config.siteTitle } {...this.props}/>
-                <div className="mainContainer">
-                  <SiteNaviMobile />
-                    <div className="contentContainer">
-                        { children }
-                    </div>
-                </div>
-            </div>
-        );
+  componentDidMount() {
+    const WOW = require('wowjs');
+    this.wow = new WOW.WOW();
+    this.wow.init();
+  }
 
-    }
+  componentDidUpdate() {
+    this.wow.sync();
+  }
 
-    componentDidMount() {
-        const WOW = require('wowjs');
-        this.wow = new WOW.WOW()
-        this.wow.init()
-    }
-
-    componentDidUpdate() {
-        this.wow.sync()
-    }
+  render() {
+    const { location, children } = this.props;
+    return (
+      <div className="pagesRootContainer">
+        <SiteNavi title={config.siteTitle} location={location} />
+        <div className="mainContainer">
+          <SiteNaviMobile />
+          <div className="contentContainer">
+            { children }
+          </div>
+        </div>
+      </div>
+    );
+  }
 
 }
 
 Template.propTypes = {
-    children: React.PropTypes.any,
-    location: React.PropTypes.object,
-    route: React.PropTypes.object,
-}
+  children: React.PropTypes.any,
+  location: React.PropTypes.object,
+  route: React.PropTypes.object,
+};
 
-export default Template
+export default Template;

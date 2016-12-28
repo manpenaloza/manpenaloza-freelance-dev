@@ -38,8 +38,8 @@ a:focus {
     background: #44535A;
 }
 
-// set to height 100% for safety reasons as quite all child elements are positoned
-// absolute or floated and thus taken out of the document flow
+// set to height 100% for safety reasons as quite all child elements are positioned
+// absolute or floated and thus taken out of the document flow > ergo this container's height will collapse to 0
 .pagesRootContainer {
     height: 100%
 }
@@ -50,7 +50,7 @@ a:focus {
     position: absolute;
     top: 0;
     bottom: 0;
-    overflow: scroll;
+    overflow-y: scroll;
     transition: left .3s;
     width: 100%;
 }

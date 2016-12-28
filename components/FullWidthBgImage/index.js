@@ -3,14 +3,13 @@ import styles from './style.module.css'
 
 const FullWidthBgImage = ({ image, bgPosition, children, padding }) => {
 
-  console.log(image);
   return(
     <div
       className={styles.bgImage}
       style={{
         padding,
         backgroundImage: `url(${image})`,
-        backgroundPosition: bgPosition
+        backgroundPosition: bgPosition,
       }}
     >
       {children}
@@ -19,8 +18,8 @@ const FullWidthBgImage = ({ image, bgPosition, children, padding }) => {
 };
 
 FullWidthBgImage.defaultProps = {
-  backgroundPosition: "50%",
-  padding: 0
+  bgPosition: "50%",
+  padding: 0,
 };
 
 export default FullWidthBgImage;

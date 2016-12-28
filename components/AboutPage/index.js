@@ -15,13 +15,14 @@ class AboutPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      avocadosEaten: 7593
+      avocadosEaten: 7593,
     }
   }
 
   renderSkillsWithSectionWrapper() {
-    const skills = require("./skills.json");
-    let SkillItems = skills.map((skill) => {
+    const skills = require('./skills.json');
+
+    const SkillItems = skills.map((skill) => {
       return (
         <div key={skill.name} className={styles.skillItem}>
           <span className={styles.skillItemIcon}>
@@ -30,8 +31,8 @@ class AboutPage extends React.Component {
           <span className={styles.skillName}>{skill.name}</span>
           <span className={styles.skillText}>{skill.text}</span>
         </div>
-      )
-    })
+      );
+    });
     return (
       <SectionWrapper customStyle={styles.skillsSection}>
         {SkillItems}

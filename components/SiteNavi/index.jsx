@@ -2,7 +2,9 @@ import React from 'react'
 import { RouteHandler, Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
+
 import './style.css'
+import avatarImage from './manuel_penaloza.jpg';
 
 // TODO: REFACTOR STYLING/CLASSNAMES TO USE CSS MODULES
 class SiteNavi extends React.Component {
@@ -50,7 +52,7 @@ class SiteNavi extends React.Component {
               <div className="sidebarNav">
                 <div id="avatar">
                   <img className="navImage navImageSqueeze"
-                       src={require('./manuel_penaloza.jpg')}
+                       src={avatarImage}
                        alt="Manuel Penaloza Bild Porträt"
                        ref={ c => this.mainImg = c }
                   />
@@ -61,6 +63,14 @@ class SiteNavi extends React.Component {
                     {this.renderMenu()}
                   </ul>
                 </div>
+                <footer>
+                  <nav>
+                    <ul>
+                      <li><a href={config.twitterProfile}>Twitter</a></li>
+                      <li><a href={config.linkedinProfile}>Linkedin</a></li>
+                    </ul>
+                  </nav>
+                </footer>
               </div>
             );
     }
