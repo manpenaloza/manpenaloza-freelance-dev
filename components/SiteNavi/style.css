@@ -7,7 +7,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     transition: left .3s;
-    min-height: 320px;
+    min-height: 650px;
     animation: bounce-in-sidebarNav 2.5s;
     &::-webkit-scrollbar {
          display: none !important
@@ -167,3 +167,36 @@ a.active {
     }
 }
 
+footer {
+    display: block;
+}
+
+nav.social {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.social ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline;
+    margin: 0 3px;
+}
+
+.social ul li a {
+    background-color: transparent;
+    color: #fff;
+    display: inline-block;
+    height: 20px;
+    opacity: .5;
+    width: 20px;
+}

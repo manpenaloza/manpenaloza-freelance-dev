@@ -47,32 +47,32 @@ class SiteNavi extends React.Component {
   }
 
   render() {
-        const { title } = this.props;
-        return (
-              <div className="sidebarNav">
-                <div id="avatar">
-                  <img className="navImage navImageSqueeze"
-                       src={avatarImage}
-                       alt="Manuel Penaloza Bild Porträt"
-                       ref={ c => this.mainImg = c }
-                  />
-                  <div className="avatarName">{title}</div>
-                </div>
-                <div className="sidebarNavContainer">
-                  <ul className="menu">
-                    {this.renderMenu()}
-                  </ul>
-                </div>
-                <footer>
-                  <nav>
-                    <ul>
-                      <li><a href={config.twitterProfile}>Twitter</a></li>
-                      <li><a href={config.linkedinProfile}>Linkedin</a></li>
-                    </ul>
-                  </nav>
-                </footer>
-              </div>
-            );
+    const { title } = this.props;
+    return (
+          <div className="sidebarNav">
+            <div id="avatar">
+              <img className="navImage navImageSqueeze"
+                   src={avatarImage}
+                   alt="Manuel Penaloza Bild Porträt"
+                   ref={ c => this.mainImg = c }
+              />
+              <div className="avatarName">{title}</div>
+            </div>
+            <div className="sidebarNavContainer">
+              <ul className="menu">
+                {this.renderMenu()}
+              </ul>
+            </div>
+            <footer>
+              <nav className="social">
+                <ul>
+                  <li><a href={config.twitterProfile} target="_blank"><span className="fa fa-twitter-square"></span></a></li>
+                  <li><a href={config.linkedinProfile} target="_blank"><span className="fa fa-linkedin-square"></span></a></li>
+                </ul>
+              </nav>
+            </footer>
+          </div>
+        );
     }
 }
 
