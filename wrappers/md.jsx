@@ -5,11 +5,12 @@ import ShowRoomPage from '../components/ShowRoomPage'
 import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
 import ContactPage from '../components/ContactPage'
+import TimelinePage from '../components/TimelinePage'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
     render() {
-        const {route} = this.props
+        const { route } = this.props
         const post = route.page.data
         let layout, template
 
@@ -27,6 +28,8 @@ class MarkdownWrapper extends React.Component {
           template = <ShowRoomPage {...this.props}/>
         } else if (layout == 'contact') {
           template = <ContactPage {...this.props}/>
+        } else if (layout == 'timeline') {
+          template = <TimelinePage {...this.props}/>
         } else if (layout != 'page') {
           template = <SitePost {...this.props}/>
         } else if (layout != 'post') {

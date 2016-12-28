@@ -6,7 +6,7 @@
     "primaryStack": "React-Native, Redux"
   },
   {
-    "name": "bier-in-aktion.at Chatbox",
+    "name": "bier-in-aktion.at Chatbot",
     "image": "bier-chatbot_reference.jpg",
     "shortDescription": "Facebook Messenger Chatbot to receive up-to-date beer offers including price and date.",
     "primaryStack": "NodeJS, Axios"
