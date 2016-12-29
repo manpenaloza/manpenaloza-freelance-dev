@@ -6,7 +6,6 @@ import FullWidthBgImage from '../FullWidthBgImage';
 import SectionWrapper from '../SectionWrapper';
 import Button from '../Button';
 import LifePeriod from './LifePeriod';
-import LifePeriodFlex from './LifePeriodFlex';
 import LifeEvent from './LifeEvent';
 import { config } from 'config';
 import styles from './style.module.css';
@@ -22,12 +21,8 @@ class TimelinePage extends React.Component {
           <div className={styles.timeline}>
             <LifeEvent/>
             <LifePeriod/>
-            <LifePeriodFlex/>
-            <LifePeriodFlex/>
+            <LifePeriod/>
             <LifeEvent/>
-            <LifePeriodFlex/>
-            <LifePeriod/>
-            <LifePeriod/>
             <LifePeriod/>
           </div>
         </SectionWrapper>

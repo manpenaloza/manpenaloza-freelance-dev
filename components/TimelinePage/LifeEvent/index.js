@@ -4,7 +4,7 @@ import styles from './style.module.css';
 const LifeEvent = () => {
 
   return (
-    <article className={styles.LifeEvent}>
+    <article className={styles.lifeEvent}>
       <header>
         <span className={styles.icon}>g</span>
         <span className={styles.date}>Jul. 2016</span>
