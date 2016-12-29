@@ -23,9 +23,9 @@ class TimelinePage extends React.Component {
             <LifeEvent/>
             <LifePeriod/>
             <LifePeriodFlex/>
-            <LifePeriod/>
+            <LifePeriodFlex/>
             <LifeEvent/>
-            <LifePeriod/>
+            <LifePeriodFlex/>
             <LifePeriod/>
             <LifePeriod/>
             <LifePeriod/>

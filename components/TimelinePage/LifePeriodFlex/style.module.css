@@ -1,95 +1,80 @@
 article.lifePeriod {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     margin: 20px 0 0 85px;
-    header {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        &:before {
-             background-color: #7F3D63;
-             border-radius: 50%;
-             border: 5px solid #fff;
-             content: '';
-             height: 15px;
-             top: 0;
-             left: -67px;
-             position: absolute;
-             width: 15px;
-             box-sizing: content-box;
-         }
-        > div {
-              width: 59.18367%;
-              float: left;
-              margin-right: 2.04082%;
-                @media(max-width: 767px) {
-                    width: 100%;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-                span.date {
-                    background-color: #7F3D63;
-                    color: #fff;
-                    font-size: 14px;
-                    font-weight: 400;
-                    text-transform: capitalize;
-                    margin-right: 10px;
-                    padding: 5px 10px;
-                }
-                h2 {
-                    color: #7F3D63;
-                    display: inline;
-                    font-size: 18px;
-                    line-height: 28px;
-                    margin: 2px 0 0;
-                    text-transform: uppercase;
-                }
-        }
-        &:after {
-             content: '';
-             height: 3px;
-             background-color: #ddd;
-             position: absolute;
-             left: -42px;
-             top: 12px;
-             width: 30px;
-         }
+    @media(min-width: 767px) {
+        flex-direction: row;
     }
-    div.lifePeriodContent {
-        overflow: hidden;
-        p {
-            width: 59.18367%;
-            float: left;
+    div.mainContent {
+        flex: 1;
+        flex-direction: column;
+        header {
+            position: relative;
+            width: 100%;
             margin-right: 2.04082%;
+            min-height: 30%;
+            &:before {
+                 background-color: #7F3D63;
+                 border-radius: 50%;
+                 border: 5px solid #fff;
+                 content: '';
+                 height: 15px;
+                 top: 0;
+                 left: -67px;
+                 position: absolute;
+                 width: 15px;
+                 box-sizing: content-box;
+            }
             @media(max-width: 767px) {
                 width: 100%;
                 margin-left: 0;
                 margin-right: 0;
             }
-        }
-        div.tags {
-            width: 38.77551%;
-            float: left;
-            word-wrap: break-word;
-            line-height: 30px;
-            position: absolute;
-            text-align: right;
-            right: 0;
-            top: 0;
-            @media(max-width: 767px) {
-                position: relative;
-                text-align: left;
-                width: 100%;
-                margin-left: 0;
-                margin-right: 0;
-            }
-            span {
+            span.date {
                 background-color: #7F3D63;
                 color: #fff;
-                display: inline-block;
-                padding: 0 5px;
-                margin: 0 0 10px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: capitalize;
+                margin-right: 10px;
+                padding: 5px 10px;
             }
+            h2 {
+                color: #7F3D63;
+                display: inline;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 2px 0 0;
+                text-transform: uppercase;
+            }
+            &:after {
+                 content: '';
+                 height: 3px;
+                 background-color: #ddd;
+                 position: absolute;
+                 left: -42px;
+                 top: 12px;
+                 width: 30px;
+            }
+        }
+    }
+    div.tags {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        line-height: 30px;
+        @media(max-width: 767px) {
+          justify-content: flex-start;
+        }
+        span {
+            background-color: #7F3D63;
+            color: #fff;
+            display: inline-block;
+            padding: 0 5px;
+            margin: 0 10px 10px 0;
         }
     }
 }
