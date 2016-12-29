@@ -4,31 +4,37 @@ import PageHeadline from '../PageHeadline';
 import PageWrapper from '../PageWrapper';
 import FullWidthBgImage from '../FullWidthBgImage';
 import SectionWrapper from '../SectionWrapper';
+import Button from '../Button';
 import LifePeriod from './LifePeriod';
+import LifePeriodFlex from './LifePeriodFlex';
+import LifeEvent from './LifeEvent';
 import { config } from 'config';
 import styles from './style.module.css';
 
 class TimelinePage extends React.Component {
-
-  renderTimeline() {
-
-  }
 
   render() {
 
     return(
       <PageWrapper>
         <PageHeadline color="#7F3D63">Go</PageHeadline>
-        <div className={styles.timeline}>
-          <LifePeriod/>
-          <LifePeriod/>
-          <LifePeriod/>
-          <LifePeriod/>
-          <LifePeriod/>
-          <LifePeriod/>
-        </div>
+        <SectionWrapper>
+          <div className={styles.timeline}>
+            <LifeEvent/>
+            <LifePeriod/>
+            <LifePeriodFlex/>
+            <LifePeriod/>
+            <LifeEvent/>
+            <LifePeriod/>
+            <LifePeriod/>
+            <LifePeriod/>
+            <LifePeriod/>
+          </div>
+        </SectionWrapper>
+        <SectionWrapper customStyle="text-center">
+          <Button to="showroom" text="Visit Showroom"/>
+        </SectionWrapper>
       </PageWrapper>
-
     );
   }
 }
