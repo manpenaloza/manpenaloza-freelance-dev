@@ -1,7 +1,7 @@
 ---
 title: Manuel Penaloza, web- & app-development
 headline: About me
-path: "/about/"
+path: "/about"
 layout: about
 aboutMeIntroductionText: Hey! I'm Manuel. A Web- & Mobile-Developer doing most of the stuff with React/React-Native and related packages and technologies. As a self-taught coder - coming from a professional area of technical product development and project management starting in 2010 - I am happy to follow my passion for coding to 100% as a freelance developer nowadays. I like to go to meetups, talk to other developers about promising technologies and give my wife and daughter a big hug when I come home from my office.
 ---

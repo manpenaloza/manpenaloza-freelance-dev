@@ -7,6 +7,7 @@ import SitePage from '../components/SitePage'
 import ContactPage from '../components/ContactPage'
 import TimelinePage from '../components/TimelinePage'
 import Lounge from '../components/Lounge'
+import StartPage from '../components/StartPage'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
@@ -23,7 +24,9 @@ class MarkdownWrapper extends React.Component {
        * Now in development good for fallback options
        */
 
-        if (layout == 'about') {
+        if (layout == 'start') {
+          template = <StartPage {...this.props}/>
+        } else if (layout == 'about') {
           template = <AboutPage {...this.props}/>
         } else if (layout == 'showroom') {
           template = <ShowRoomPage {...this.props}/>

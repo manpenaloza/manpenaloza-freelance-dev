@@ -11,7 +11,6 @@ import { config } from 'config';
 class ContactPage extends React.Component {
 
   render() {
-    console.log(styles);
     const {route} = this.props;
     const post = route.page.data;
     const bgImage = require('./images/contatme-bg.jpg')
