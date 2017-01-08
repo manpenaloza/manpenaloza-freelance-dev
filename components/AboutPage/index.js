@@ -77,7 +77,7 @@ class AboutPage extends React.Component {
     const post = route.page.data
     return (
       <PageWrapper>
-        <PageHeadline color="#3D7F59">About me</PageHeadline>
+        <PageHeadline color="#3996DD">About me</PageHeadline>
         <SectionWrapper customStyle={styles.about}>
           <p className={styles.aboutMeIntroductionText}>{post.aboutMeIntroductionText}</p>
           <div className={`${styles.aboutMeMainImage} ${styles.containerAnimated}`}></div>

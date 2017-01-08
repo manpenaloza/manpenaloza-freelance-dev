@@ -14,7 +14,7 @@ article.lifePeriod {
             margin-right: 2.04082%;
             min-height: 30%;
             &:before {
-                 background-color: #7F3D63;
+                 background-color: #CB2F28;
                  border-radius: 50%;
                  border: 5px solid #fff;
                  content: '';
@@ -31,7 +31,7 @@ article.lifePeriod {
                 margin-right: 0;
             }
             span.date {
-                background-color: #7F3D63;
+                background-color: #CB2F28;
                 color: #fff;
                 font-size: 14px;
                 font-weight: 400;
@@ -40,7 +40,7 @@ article.lifePeriod {
                 padding: 5px 10px;
             }
             h2 {
-                color: #7F3D63;
+                color: #CB2F28;
                 display: inline;
                 font-size: 18px;
                 line-height: 28px;
@@ -70,7 +70,7 @@ article.lifePeriod {
           justify-content: flex-start;
         }
         span {
-            background-color: #7F3D63;
+            background-color: #CB2F28;
             color: #fff;
             display: inline-block;
             padding: 0 5px;

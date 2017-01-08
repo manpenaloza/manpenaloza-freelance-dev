@@ -32,7 +32,7 @@
     background-image: url("./images/about-me-main-image.png");
     width: 49.15254%;
     float: left;
-    background-color: #7F3D63;
+    background-color: #CB2F28;
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -117,15 +117,15 @@
     letter-spacing: 1px;
     text-align: center;
     a {
-      color: #7F3D63;
+      color: #CB2F28;
       &:focus, &:hover {
-        color: #3d7f59 !important;
+        color: #3996DD !important;
        }
     }
 }
 
 .quoteSymbol {
-    color: #3d7f59;
+    color: #3996DD;
     /*font-size: 100px;*/
     font-style: italic;
     margin-top: 20px;
@@ -170,7 +170,7 @@
     0% {
         transform: rotate(2deg) translateY(-3px) scale(1.1);
         font-weight: 500;
-        color: #3D7F59;
+        color: #3996DD;
     }
     5% {
         transform: rotate(-1deg);

@@ -15,7 +15,7 @@ article.lifeEvent {
               border-radius: 50%;
               color: #fff;
               border: 5px solid #fff;
-              background-color: #7F3D63;
+              background-color: #CB2F28;
               content: '';
               height: 60px;
               left: 0;
@@ -26,12 +26,12 @@ article.lifeEvent {
               display: flex;
               align-items: center;
               justify-content: center;
-              animation: jumpInLikeTennisBall 2s;
+              animation: jumpInLikeTennisBall-Y-axis 2s;
               animation-fill-mode: backwards;
-              animation-delay: 1.5s;
+              animation-delay: 0.5s;
         }
         > span.date {
-              background-color: #7F3D63;
+              background-color: #CB2F28;
               color: #fff;
               font-size: 14px;
               font-weight: 400;
@@ -58,10 +58,11 @@ article.lifeEvent {
     }
 }
 
-@keyframes jumpInLikeTennisBall {
+@keyframes jumpInLikeTennisBall-Y-axis {
     0% {
-        transform: translateY(-250px) translateX(-100px);
+        transform: translateY(-250px);
         animation-timing-function: ease-in;
+        opacity: 0;
     }
     40% {
         transform: translateY(-35px);

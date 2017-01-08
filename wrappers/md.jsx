@@ -6,6 +6,7 @@ import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
 import ContactPage from '../components/ContactPage'
 import TimelinePage from '../components/TimelinePage'
+import Lounge from '../components/Lounge'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
@@ -30,6 +31,8 @@ class MarkdownWrapper extends React.Component {
           template = <ContactPage {...this.props}/>
         } else if (layout == 'timeline') {
           template = <TimelinePage {...this.props}/>
+        } else if (layout == 'lounge') {
+          template = <Lounge {...this.props}/>
         } else if (layout != 'page') {
           template = <SitePost {...this.props}/>
         } else if (layout != 'post') {

@@ -12,7 +12,7 @@ a.messageMe {
     display: inline-block;
     padding: 15px 25px;
     letter-spacing: 2px;
-    background: rgba(67, 95, 90, .5);
+    background: rgba(51, 72, 92, .5);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition:
         background-color 0.4s ease-out,
@@ -23,7 +23,7 @@ a.messageMe {
 
     &:hover {
         color: #fff;
-        background-color: #7F3D63;
+        background-color: #CB2F28;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         transform: scale(1.05);
         border-bottom: 4px solid #fff;
@@ -40,7 +40,7 @@ a.messageMe {
     margin: 10px 20px;
 
     &:hover {
-        color: #7F3D63;
+        color: #CB2F28;
      }
 }
 

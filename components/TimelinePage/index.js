@@ -16,7 +16,7 @@ class TimelinePage extends React.Component {
 
     return(
       <PageWrapper>
-        <PageHeadline color="#7F3D63">Go</PageHeadline>
+        <PageHeadline color="#CB2F28">Go</PageHeadline>
         <SectionWrapper>
           <div className={styles.timeline}>
             <LifeEvent/>

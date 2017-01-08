@@ -28,7 +28,7 @@
                 border-style: none;
             }
             div.refItemOverlay {
-                background-color: #44535a;
+                background-color: #33485C;
                 bottom: 6px;
                 content: '';
                 display: flex;
@@ -58,7 +58,7 @@
         padding: 20px 10px;
         text-align: center;
         strong {
-            color: #44535a;
+            color: #33485C;
             display: block;
             text-transform: uppercase;
             font-weight: bolder;

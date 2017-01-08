@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 15px 25px;
-    background-color: #3D7F59;
+    background-color: #3996DD;
     color: white;
     text-decoration: none;
     font-weight: 300;
@@ -14,7 +14,7 @@
 
 .btn:hover {
     color: white;
-    background-color: #7F3D63;
+    background-color: #CB2F28;
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }

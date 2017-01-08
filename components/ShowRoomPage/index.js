@@ -49,18 +49,14 @@ class ShowRoomPage extends React.Component {
     )
   }
 
-  componentDidMount() {
-    //new Vivus('glasses-svg', {duration: 200, file: <GlassesSvg/>});
-  }
-
   render() {
     const {route} = this.props
     const post = route.page.data
     return (
       <PageWrapper>
-        <PageHeadline color="#44535A">Showroom</PageHeadline>
+        <PageHeadline color="#33485C">Showroom</PageHeadline>
         <SectionWrapper customStyle={styles.glassesWrapper}>
-          <MtSvgLines animate={1400} duration={3000} fade={true}>
+          <MtSvgLines animate={1400} duration={2500} fade={true} timine="ease-in">
             <GlassesSvg/>
           </MtSvgLines>
         </SectionWrapper>
