@@ -119,13 +119,13 @@
     a {
       color: #CB2F28;
       &:focus, &:hover {
-        color: #3996DD !important;
+        color: #CC7528 !important;
        }
     }
 }
 
 .quoteSymbol {
-    color: #3996DD;
+    color: #CC7528;
     /*font-size: 100px;*/
     font-style: italic;
     margin-top: 20px;
@@ -170,7 +170,7 @@
     0% {
         transform: rotate(2deg) translateY(-3px) scale(1.1);
         font-weight: 500;
-        color: #3996DD;
+        color: #CC7528;
     }
     5% {
         transform: rotate(-1deg);
