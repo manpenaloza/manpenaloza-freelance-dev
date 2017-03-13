@@ -22,19 +22,19 @@ const TimelinePage = (props) => {
             date="2017"
             title="Contractor Amazeelabs (CH)"
             description="Luckily the show goes on. My freelance work for Amazeelabs, a company with its headquarters in Capetown and an office in the US, goes on. I started to work more intense with GraphQL and Flow to hit the requirement of typed Javascript."
-            tags={['React', 'Redux', 'Flexbox', 'Styled-Components', 'NodeJS', 'GraphQL', 'Flow']}
+            tags={['React', 'GraphQL', 'Flow', 'Redux', 'Flexbox', 'Styled-Components', 'Create-React-App', 'NodeJS', 'Git']}
           />
           <LifePeriod 
             date="2016"
             title="Contractor Amazeelabs (CH)"
             description="How cool was that! Suddenly part of highly talented crowd of developers squeezing out maximum effectivens and efficiency of bleeding-edge technology. I gained tons of knowledge about developing big-scale applications."
-            tags={['React', 'Redux', 'Flexbox', 'Styled-Components']}
+            tags={['React', 'Redux', 'Flexbox', 'Styled-Components', 'Create-React-App', 'Git']}
           />
           <LifePeriod 
             date="2016"
             title="React Native Development and App Release"
             description="In 2015 I started to play around with React Native. In 2016, when I considered the technology to be market-ready, I decided to make and release a live-showcase by developing an app that shows current beer offers. Finally I helped clients to get started with React Native development."
-            tags={['React Native', 'Flexbox', 'Axios', 'Redux', 'Google Analytics for Apps', 'Google Play Dev Console']}
+            tags={['React Native', 'Flexbox', 'Axios', 'Redux', 'Redux-Saga', 'Git', 'Google Analytics for Apps', 'Google Play Dev Console']}
           />
           <LifePeriod 
             date="2016"
