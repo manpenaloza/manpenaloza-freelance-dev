@@ -1,25 +1,25 @@
 import React from 'react';
 import styles from './style.module.css';
 
-const LifePeriod = () => {
+const renderTags = (tags = []) => {
+  return tags.map((tag) => (
+    <span key={tag}>{tag}</span>
+  ));
+}
+
+const LifePeriod = (props) => {
+  const { date, title, description, tags } = props;
   return (
     <article className={styles.lifePeriod}>
       <div className={styles.mainContent}>
         <header>
-            <span className={styles.date}>Date</span>
-            <h2>Flex</h2>
+            <span className={styles.date}>{date}</span>
+            <h2>{title}</h2>
         </header>
-        <p>FLEX Content text is her sdf is her Content is sdfsdf Content texttext is her</p>
+        <p>{description}</p>
       </div>
       <div className={styles.tags}>
-        <span>FLEX Javascript</span>
-        <span>Redux</span>
-        <span>React Native</span>
-        <span>Axios</span>
-        <span>Google Play</span>
-        <span>Google Analytics</span>
-        <span>Node JS</span>
-        <span>FLEX React</span>
+        {renderTags(tags)}
       </div>
     </article>
   )

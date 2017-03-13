@@ -9,7 +9,6 @@ import PageHeadline from '../PageHeadline';
 import PageWrapper from '../PageWrapper';
 import SectionWrapper from '../SectionWrapper';
 import GlassesSvg from './images/jsxIfyedGlassesSVG';
-import MtSvgLines from 'react-mt-svg-lines';
 import styles from './style.module.css';
 
 // TODO: REFACTOR STYLING/CLASSNAMES TO USE CSS MODULES
@@ -56,9 +55,7 @@ class ShowRoomPage extends React.Component {
       <PageWrapper>
         <PageHeadline color="#33485C">Showroom</PageHeadline>
         <SectionWrapper customStyle={styles.glassesWrapper}>
-          <MtSvgLines animate={1400} duration={2500} fade={true} timine="ease-in">
-            <GlassesSvg/>
-          </MtSvgLines>
+          <GlassesSvg/>
         </SectionWrapper>
         {this.renderReferencesWithSectionWrapper()}
       </PageWrapper>

@@ -1,7 +1,7 @@
 article.lifeEvent {
     min-height: 70px;
     position: relative;
-    margin: 10px 0;
+    margin: 10px 0 50px 0;
     &:first-of-type {
         margin-top: 50px;
      }
@@ -20,7 +20,7 @@ article.lifeEvent {
               height: 60px;
               left: 0;
               position: absolute;
-              font-size: 24px;
+              font-size: 20px;
               top: 0;
               width: 60px;
               display: flex;

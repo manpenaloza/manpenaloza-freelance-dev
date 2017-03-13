@@ -17,8 +17,6 @@ class StartPage extends React.Component {
     const post = route.page.data;
     const bgImage = require('./images/teaser-image.jpg');
 
-    console.log(post);
-
     return (
       <FullWidthBgImage image={bgImage} padding={20}>
         <PageWrapper>
@@ -27,7 +25,8 @@ class StartPage extends React.Component {
               fontFamily: 'Oleo Script',
               textAlign: "center",
               fontSize: 42,
-              marginVertical: 15
+              marginVertical: 15,
+              lineHeight: '2.7rem',
             }}>Hello! I'm Manuel.</h1>
           </SectionWrapper>
           <SectionWrapper customStyle="text-center">

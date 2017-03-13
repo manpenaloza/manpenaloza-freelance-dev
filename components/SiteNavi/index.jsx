@@ -28,7 +28,7 @@ class SiteNavi extends React.Component {
   componentDidMount() {
     // remove navImageSqueeze effect after 2 sec in order to not conflict with image bump effect on mouse hover during session
     // setTimeout(() => this.mainImg.classList.remove('navImageSqueeze')), 2000)
-}
+  }
 
   renderMenu() {
     let { location } = this.props;
@@ -68,6 +68,7 @@ class SiteNavi extends React.Component {
                 <ul>
                   <li><a href={config.twitterProfile} target="_blank"><span className="fa fa-twitter-square"></span></a></li>
                   <li><a href={config.linkedinProfile} target="_blank"><span className="fa fa-linkedin-square"></span></a></li>
+                  <li><a href={config.githubProfile} target="_blank"><span className="fa fa-github-square"></span></a></li>
                 </ul>
               </nav>
             </footer>

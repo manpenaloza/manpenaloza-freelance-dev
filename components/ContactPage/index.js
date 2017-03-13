@@ -24,6 +24,7 @@ class ContactPage extends React.Component {
             <p className={styles.contactInfo}>Or find me here.</p>
             <a href={config.twitterProfile} className={styles.socialIconLink}><span className={`fa fa-twitter ${styles.socialIcon}`}></span></a>
             <a href={config.linkedinProfile} className={styles.socialIconLink}><span className={`fa fa-linkedin ${styles.socialIcon}`}></span></a>
+            <a href={config.githubProfile} className={styles.socialIconLink}><span className={`fa fa-github ${styles.socialIcon}`}></span></a>
           </SectionWrapper>
         </PageWrapper>
       </FullWidthBgImage>

@@ -9,6 +9,7 @@
     transition: left .3s;
     min-height: 650px;
     /*animation: bounce-in-sidebarNav 2.5s;*/
+    
     &::-webkit-scrollbar {
          display: none !important
     }
